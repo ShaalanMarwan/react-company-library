@@ -1,4 +1,4 @@
 import React from 'react';
-export const Button = () => {
+export const Button:React.FC = () => {
   return <button>Hello World!</button>;
 };

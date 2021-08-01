@@ -7,6 +7,7 @@ import {
   DISABLED_OPACITY,
 } from '../utils/styles';
 import { TextareaProps } from './Textarea';
+
 export const StyledLabel = styled.label`
   font-weight: 500;
   margin-bottom: 0.4rem;
@@ -36,7 +37,8 @@ export const StyledInput = styled.input`
     opacity: ${DISABLED_OPACITY};
   }
 `;
-export const StyledTextArea = styled(StyledInput as 'textarea').attrs({
+
+export const StyledTextarea = styled(StyledInput as 'textarea').attrs({
   as: 'textarea',
 })<TextareaProps>`
   resize: ${(props) => !props.isResizable && 'none'};

@@ -1,7 +1,5 @@
-//File: .babelrc
-
 {
-  "preset": [
+  "presets": [
     [
       "@babel/preset-env",
       {
@@ -13,6 +11,6 @@
   ],
   "plugins": [
     "@babel/plugin-transform-runtime",
-    "@babel-plugin-styled-components"
+    "babel-plugin-styled-components"
   ]
 }

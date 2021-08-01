@@ -42,12 +42,28 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   }
 );
 
-Button.propTypes={
-  variant:PropTypes.oneOf(['text','outlined','contained','stroked','filled','secondary','primary','danger']),
-  color:PropTypes.oneOf(['default','primary','secondary','danger','light','dark']),
-  size:PropTypes.oneOf(['small','medium','large']),
-  isFullWidth:PropTypes.bool,
-}
+Button.propTypes = {
+  variant: PropTypes.oneOf([
+    'text',
+    'outlined',
+    'contained',
+    'stroked',
+    'filled',
+    'secondary',
+    'primary',
+    'danger',
+  ]),
+  color: PropTypes.oneOf([
+    'default',
+    'primary',
+    'secondary',
+    'danger',
+    'light',
+    'dark',
+  ]),
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  isFullWidth: PropTypes.bool,
+};
 Button.defaultProps = {
   variant: 'secondary',
   size: 'small',

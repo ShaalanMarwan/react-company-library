@@ -9,7 +9,7 @@ import {
   DANGER_TEXT_COLOR,
   DISABLED_OPACITY,
 } from '../utils/styles';
-import { ButtonProps } from './button';
+import { ButtonProps } from './Button';
 
 const colorStyles = (p: ButtonProps) => {
   let color = SECONDARY_TEXT_COLOR,

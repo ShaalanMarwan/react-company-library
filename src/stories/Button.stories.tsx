@@ -7,5 +7,10 @@ export default {
   component: Button,
 } as Meta;
 
-const Template: Story = (args) => <Button {...args} />;
+const Template: Story = (args) => <Button {...args} >my button component</Button>;
 export const Default = Template.bind({});
+
+
+Default.args={
+  disabled: false
+}

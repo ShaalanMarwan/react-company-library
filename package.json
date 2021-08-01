@@ -1,0 +1,36 @@
+{
+  "name": "@shaalanmarwan/react-company-library",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShaalanMarwan/react-company-library.git"
+  },
+  "author": "Shaalan Marwan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShaalanMarwan/react-company-library/issues"
+  },
+  "homepage": "https://github.com/ShaalanMarwan/react-company-library#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@storybook/addon-actions": "^6.3.6",
+    "@storybook/addon-essentials": "^6.3.6",
+    "@storybook/addon-links": "^6.3.6",
+    "@storybook/react": "^6.3.6",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "babel-loader": "^8.2.2",
+    "typescript": "^4.3.5"
+  }
+}

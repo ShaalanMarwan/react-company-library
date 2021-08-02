@@ -15,7 +15,7 @@
     "build:storybook": "build-storybook",
     "build:types": "tsc -p tsconfig.build.json",
     "format": "prettier --write .",
-    "lint:format": "pretter --check .",
+    "lint:format": "prettier --check .",
     "lint": "eslint src/**",
     "start": "start-storybook -p 6006",
     "test": "jest"

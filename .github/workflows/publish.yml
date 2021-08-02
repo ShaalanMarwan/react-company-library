@@ -1,27 +1,26 @@
-
+# File: .github/workflows/publish.yml
 
 name: Publish
 
-
 on:
   push:
-      tags:
-        - 'v*'
+    tags:
+      - 'v*'
 
 jobs:
   publish:
-      runs-on: ubuntu-latest
-      steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '16.x'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@shaalanmarwan'
-        run: npm ci
-        run: npm run lint
-        run: npm run test
-        run: npm run build
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '16.x'
+        registry-url: 'https://npm.pkg.github.com'
+        scope: '@GITHUBUSERNAME'
+    - run: npm ci
+    - run: npm run lint
+    - run: npm run test
+    - run: npm run build
+    - run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
